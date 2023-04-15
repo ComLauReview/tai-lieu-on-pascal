@@ -1,0 +1,18 @@
+program tinhdientinhhhcn;
+uses crt;
+var a,b,h:integer;
+dientich:longint;
+
+begin
+clrscr;
+write('Nhap a vao day:');       readln(a);
+if a<=1 then
+write('Nhap b vao day:');       readln(b);
+if  b<=1 then
+write('Nhap h vao day:');       readln(h);
+
+dientich:= h * 2 *  (a+b);
+writeln('DIen tich la:  ' , dientich);     readln(dientich);
+readln
+
+end.
