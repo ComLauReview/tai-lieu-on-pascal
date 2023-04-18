@@ -1,0 +1,13 @@
+program so_dao;
+uses crt;
+var n:longint;
+begin
+clrscr;
+    write('Nhap so N:');    readln(n);
+    while n>0 do
+    begin
+    write(n mod 10);
+    n:=n div 10;
+    end;
+    readln;
+end.

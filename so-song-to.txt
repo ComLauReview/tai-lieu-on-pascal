@@ -1,0 +1,31 @@
+program sosongto;
+uses crt;
+var n:longint;
+
+function ktsonguyento(n:longint):Boolean ;      {function I}
+var i:longint;
+begin
+for i:=2 to n-1 do
+if (n mod i = 0)  then
+ktsonguyento:=false
+else
+ktsonguyento:=true;
+end;
+
+function tongcacchuso(n:longint):longint;       {function II}
+var s:longint;
+begin
+s:=0;
+while (n<>0) do
+begin
+s:=s+(n mod 10);
+n:=n div 10;
+end;
+end;
+begin
+  writeln('Nhap N: ');   readln(n);
+  if ktsonguyento(n) and ktsonguyento(tongcacchuso(n)) then writeln('n la so song to')
+  else
+  writeln('n khong phai la so song to');
+  readln
+end.
