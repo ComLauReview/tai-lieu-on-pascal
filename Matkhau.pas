@@ -17,19 +17,21 @@ begin
   i := 1;
   while i <= length(str) do
   begin
-    // Đếm số lượng kí tự liên tiếp
-    count := 1;
-    while (i + count <= length(str)) and (str[i+count] = str[i]) do
+    // Đếm số lượng kí tự liên tiếp là a
+    count := 0;
+    while (i + count <= length(str)) and (str[i+count] = 'a') do
       inc(count);
     
     // Thêm số lượng kí tự liên tiếp vào kết quả
-    output := output + IntToStr(count);
+    if count > 0 then
+      output := output + IntToStr(count) + 'a';
     
-    // Thêm kí tự vào kết quả
-    output := output + str[i];
+    // Thêm kí tự khác a vào kết quả
+    if (count = 0) or (i + count > length(str)) or (str[i+count] <> 'a') then
+      output := output + str[i];
     
     // Tăng biến lặp lên số lượng kí tự vừa được đếm
-    i := i + count;
+    i := i + count + 1;
   end;
   
   // Xuất kết quả
