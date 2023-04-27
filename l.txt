@@ -1,0 +1,9 @@
+Cú pháp và hoạt động của câu lệnh lặp với số lần biết trước trong ngôn ngữ lập
+trình Pascal:
+- Câu lệnh lặp sẽ thực hiện câu lệnh nhiều lần, mỗi lần là 1 vòng lặp. số
+vòng lặp là biết trước và bằng giá trị cuối – giá trị đầu + 1
+- Cú pháp:
+For<biến đếm > := <giá trị đầu> to <giá trị cuối> do <câu lệnh>
+- Biến đếm phải là kiểu nguyên.
+- Ban đầu sẽ có giá trị đầu, sau mỗi vòng lặp biến đếm tự động tăng cho
+đến khi băng giá trị cuối.
